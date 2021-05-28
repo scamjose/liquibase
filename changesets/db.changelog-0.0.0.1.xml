@@ -45,4 +45,9 @@
     </insert>
 </changeSet>
 
+<changeSet id="Jose Marcos" author="5">
+    <sqlFile endDelimiter="//" path="./scripts/stored_pro.sql" stripComments="true" />
+</changeSet>
+
+
 </databaseChangeLog> 
