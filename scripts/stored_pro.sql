@@ -1,6 +1,7 @@
-DELIMITER //
-CREATE PROCEDURE getAlumnos()
+//
+DROP PROCEDURE IF EXISTS GetAlumnos //
+
+CREATE PROCEDURE GetAlumnos()
 BEGIN
-	SELECT * FROM Alumno;
+    SELECT *  FROM Alumno;
 END //
-DELIMITER ;

@@ -1,6 +1,6 @@
 <?xml version="1.1" encoding="UTF-8" standalone="no"?>
 <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.1.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
-    <changeSet author="scama (generated)" id="1622230306596-1">
+    <changeSet author="scama (generated)" id="1622249011962-1">
         <createTable tableName="alumno">
             <column name="Id" type="INT">
                 <constraints nullable="false" primaryKey="true"/>
@@ -9,7 +9,7 @@
             <column name="Id_curso" type="INT"/>
         </createTable>
     </changeSet>
-    <changeSet author="scama (generated)" id="1622230306596-2">
+    <changeSet author="scama (generated)" id="1622249011962-2">
         <createTable tableName="curso">
             <column name="Id" type="INT">
                 <constraints nullable="false" primaryKey="true"/>
@@ -17,12 +17,12 @@
             <column name="Nombre" type="VARCHAR(50)"/>
         </createTable>
     </changeSet>
-    <changeSet author="scama (generated)" id="1622230306596-3">
+    <changeSet author="scama (generated)" id="1622249011962-3">
         <createIndex indexName="fk_curso_alumno" tableName="alumno">
             <column name="Id_curso"/>
         </createIndex>
     </changeSet>
-    <changeSet author="scama (generated)" id="1622230306596-4">
+    <changeSet author="scama (generated)" id="1622249011962-4">
         <addForeignKeyConstraint baseColumnNames="Id_curso" baseTableName="alumno" constraintName="fk_curso_alumno" deferrable="false" initiallyDeferred="false" onDelete="RESTRICT" onUpdate="RESTRICT" referencedColumnNames="Id" referencedTableName="curso" validate="true"/>
     </changeSet>
 </databaseChangeLog>
